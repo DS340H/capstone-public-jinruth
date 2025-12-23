@@ -7,7 +7,7 @@
 
 This repository contains **public-safe outputs and analysis code** for my DS340 final project. It includes:
 
-- **B_generate_poster_figures_PUBLIC** (public-facing analysis + visualization)
+- **Notebook_B** (public-facing analysis + visualization)
 - **Sanitized datasets** (hashed creator/post IDs; no raw text/usernames)
 - **Figures and tables** generated from the sanitized datasets
 
@@ -33,7 +33,7 @@ My full research question is: How do mompreneur creators within the #SAHM TikTok
 
 ## What’s in This Public Repo
 
-### `B_generate_poster_figures_PUBLIC` (public analysis notebook)
+### `Notebook_B` (public analysis notebook)
 - Loads sanitized CSVs from `data_sanitized/`
 - Produces the plots in `figures/` and the tables in `tables/`
 - Runs creator-level engagement analyses (including OLS regression)
@@ -85,7 +85,7 @@ Saved tables produced by Notebook B (model comparison table, regression coeffici
 
 ## How to Run Notebook B
 
-1. Open `B_generate_poster_figures_PUBLIC.ipynb`
+1. Open `Notebook_B.ipynb`
 2. Run cells top-to-bottom
 
 Outputs will be written to:
