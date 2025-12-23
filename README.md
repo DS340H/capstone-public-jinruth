@@ -83,6 +83,30 @@ Saved tables produced by Notebook B (model comparison table, regression coeffici
 
 ---
 
+## `code_screenshots/` (Private Notebook Code Excerpts — Not Reproducible)
+
+This folder contains **screenshots of selected code cells from Notebook A (private notebook)**. These screenshots are included **for transparency**, but they are **not executable** and are **not intended to reproduce results**.
+
+### Why screenshots?
+Notebook A includes steps that rely on **restricted inputs** (raw usernames, captions, and voice-to-text transcripts) and local/private files. To avoid releasing sensitive data while still documenting the workflow, I provide **non-executable screenshots** that show:
+
+- Data loading and preprocessing structure (without exposing raw text/usernames)
+- Feature construction logic (e.g., hashtag normalization, word-count features)
+- Model training pipeline setup (e.g., TF-IDF + Logistic Regression)
+
+### What is NOT included
+To prevent leakage of sensitive information, screenshots **exclude**:
+- Any outputs that contain raw text, usernames, or direct identifiers
+- Full data previews of private tables
+- Any cells that print or display raw captions / transcripts
+- Any private labeling sheets used for human validation
+
+### Reproducibility note
+Because these are screenshots (not runnable code) and Notebook A depends on private inputs, the contents of `code_screenshots/` are **not reproducible** in this public repository. The **reproducible portion** of this repo is Notebook B + `data_sanitized/`, which supports regenerating the figures/tables from the sanitized datasets.
+
+---
+
+
 ## How to Run Notebook B
 
 1. Open `Notebook_B.ipynb`
